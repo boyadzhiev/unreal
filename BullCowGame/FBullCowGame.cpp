@@ -1,11 +1,14 @@
+/**/
+#pragma once
 #include "FBullCowGame.h"
 #include <map>
-#define TMap std::map
 
+// to make syntax Unreal friendly
+#define TMap std::map 
 using FString = std::string;
 using int32 = int;
 
-FBullCowGame::FBullCowGame() { FBullCowGame::Reset(); }
+FBullCowGame::FBullCowGame() { FBullCowGame::Reset(); } // default constructor
 
 //Getters
 int32 FBullCowGame::GetCurrentTry() const { return MyCurrentTry; }
@@ -21,7 +24,7 @@ int32 FBullCowGame::GetMaxTries() const
 void FBullCowGame::Reset()
 {
 
-	const FString HIDDEN_WORD = "plane";
+	const FString HIDDEN_WORD = "plane"; // this MUST be an isogram
 	
 	MyHiddenWord = HIDDEN_WORD;
 	MyCurrentTry = 1;
@@ -39,7 +42,7 @@ EGuessStatus FBullCowGame::CheckGuessValidity(FString Guess) const
 	}
 	else if (!IsLowercase(Guess))
 	{
-		return EGuessStatus::Not_Lowercase; // TODO write function
+		return EGuessStatus::Not_Lowercase; 
 	}
 	else if (Guess.length() != GetHiddenWordLenght())
 	{
