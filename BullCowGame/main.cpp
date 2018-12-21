@@ -66,15 +66,27 @@ void PlayGame()
 // introduce the game
 void PrintIntro()
 {	
-	std::cout << "\n\nWelcome to Bulls and Cows, a fun word game.\n";
+	std::cout << "\n\nWelcome to Bulls and Cows, a fun word game.\n\n";
 
-	std::cout << "          /******\\       \n";
-	std::cout << "         /        \\    \n";
-	std::cout << "        |  *    *  |    \n";
-	std::cout << "         \\   /\\   /     \n";
-	std::cout << "          |      |      \n";
-	std::cout << "            *||*        \n";
-	
+	std::cout << "         .e$$$$e.\n";
+	std::cout << "       e$$$$$$$$$$e\n";
+	std::cout << "      $$$$$$$$$$$$$$\n";
+	std::cout << "     d$$$$$$$$$$$$$$b\n";
+	std::cout << "     $$$$$$$$$$$$$$$$\n";
+	std::cout << "    4$$$$$$$$$$$$$$$$F\n";
+	std::cout << "    4$$$$$$$$$$$$$$$$F\n";
+	std::cout << "     $$$\" \"$$$$\" \"$$$\n";
+	std::cout << "     $$F   4$$F   4$$\n";
+	std::cout << "     '$F   4$$F   4$\"\n";
+		std::cout << "      $$   $$$$   $P\n";
+	std::cout << "      4$$$$$\"^$$$$$%\n";
+		std::cout << "       $$$$F  4$$$$\n";
+	std::cout << "        \"$$$ee$$$\"\n";
+	std::cout << "        . *$$$$F4\n";
+	std::cout << "         $     .$\n";
+	std::cout << "         \"$$$$$$\"\n";
+	std::cout << "          ^$$$$\n\n";
+
 
 	std::cout << "Can you guess the " << BCGame.GetHiddenWordLenght();
 	std::cout << " letter isogram I'm thinking of?\n";
